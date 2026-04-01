@@ -58,6 +58,7 @@ Its security, stability, and open-source model continue to make it a leading cho
 ---
 
 ### Linux Distributions
+
 A Linux distribution is a complete operating system built on the Linux kernel and bundled with tools, software packages, system utilities, and sometimes a desktop environment.
 
 I learned that distributions are created for different categories of users such as:
@@ -80,12 +81,14 @@ This reduces manual setup and allows users to choose systems based on:
 - ease of use
 - customization level
 
+
 ---
 
 ### Popular Linux Distributions
 There are over 600 Linux distributions, but I focused on the most widely used ones.
 
-#### :contentReference[oaicite:4]{index=4}
+![Linux Distro](https://raw.githubusercontent.com/JudeNwagu/Linux-30-Days-Learning/main/Day01/linux%20distro.png)
+
 A beginner-friendly distribution used for desktops, servers, and cloud environments.
 
 **Features**
@@ -143,6 +146,9 @@ These advantages explain why Linux dominates cloud, backend, and server infrastr
 
 ### Linux Architecture
 Linux follows a layered architecture where each component has a specific responsibility.
+
+<img width="662" height="423" alt="Linux arch" src="https://github.com/user-attachments/assets/2e850f04-694e-4e21-965e-1aff70ede2da" />
+
 
 The main layers are:
 - Applications
@@ -203,6 +209,9 @@ Examples include:
 
 ### Applications of Linux
 Linux is widely used in many real-world environments.
+
+<img width="745" height="379" alt="Screenshot 2026-04-01 194313" src="https://github.com/user-attachments/assets/c2825697-2b46-43bf-9486-f5185974fc68" />
+
 
 #### Servers and Hosting
 Linux powers most servers, cloud systems, and data centers.
@@ -269,9 +278,9 @@ The strongest takeaway from today is that Linux is not just an operating systemâ
 ---
 
 ## Resources
-- Geek Linux learning resource
+- GeeksforGeeks Linux learning resource
 - personal structured notes
-- Linux architecture study materials
+
 
 ---
 
