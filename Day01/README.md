@@ -28,7 +28,7 @@ Some important things I learned about Linux:
 The history of Linux shows how it evolved from a personal project into one of the most important operating systems in the modern world.
 
 #### Phase 1: Early Development (1991)
-Linux was created by **Linus Torvalds** :contentReference[oaicite:0]{index=0} in 1991 as a free and open-source operating system kernel.
+Linux was created by **Linus Torvalds** : in 1991 as a free and open-source operating system kernel.
 
 It was inspired by UNIX and the MINIX operating system.
 
@@ -42,7 +42,7 @@ Linux began gaining adoption in:
 - enterprise environments
 - development systems
 
-Major distributions like :contentReference[oaicite:1]{index=1}, :contentReference[oaicite:2]{index=2}, and :contentReference[oaicite:3]{index=3} helped drive this growth.
+Major distributions like Debian, Red Hat, and Ubuntu increased its popularity and helped drive this growth.
 
 #### Phase 4: Present-Day Linux Ecosystem
 Today Linux powers:
@@ -89,7 +89,7 @@ There are over 600 Linux distributions, but I focused on the most widely used on
 
 ![Linux Distro](https://raw.githubusercontent.com/JudeNwagu/Linux-30-Days-Learning/main/Day01/linux%20distro.png)
 
-A beginner-friendly distribution used for desktops, servers, and cloud environments.
+**Ubuntu** A beginner-friendly distribution used for desktops, servers, and cloud environments.
 
 **Features**
 - Easy installation
@@ -101,8 +101,7 @@ A beginner-friendly distribution used for desktops, servers, and cloud environme
 - general users
 - cloud learners
 
-#### :contentReference[oaicite:5]{index=5}
-A security-focused Linux distribution used for penetration testing and digital forensics.
+**Kali Linux** A security-focused Linux distribution used for penetration testing and digital forensics.
 
 **Features**
 - pre-installed tools like Nmap, Metasploit, Wireshark
@@ -113,20 +112,22 @@ A security-focused Linux distribution used for penetration testing and digital f
 - ethical hackers
 - cybersecurity professionals
 
-#### :contentReference[oaicite:6]{index=6}
-Known for long-term stability and reliability.
+**Debian** Known for long-term stability and reliability.
 
-#### :contentReference[oaicite:7]{index=7}
-Popular among developers who want access to newer technologies.
 
-#### :contentReference[oaicite:8]{index=8}
-Best for users who want full control and deep customization.
+**Fedora** 
+- Popular among developers who want access to newer technologies.
 
-#### :contentReference[oaicite:9]{index=9}
-Commonly used in enterprise and server environments.
 
-#### :contentReference[oaicite:10]{index=10}
-Great for beginners transitioning from Windows.
+**Arch Linux** 
+- Best for users who want full control and deep customization.
+
+**CentOS** 
+- Commonly used in enterprise and server environments.
+
+
+**Linux Mint** 
+- Great for beginners transitioning from Windows.
 
 ---
 
