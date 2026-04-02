@@ -32,6 +32,9 @@ The most interesting part of today’s learning was understanding the story behi
 ### Understanding the Linux Directory Tree
 The Linux directory tree is like a map of the operating system.
 
+<img width="586" height="515" alt="Linu file tree" src="https://github.com/user-attachments/assets/f02844c2-b08d-4f0e-9450-be85be12b4ef" />
+
+
 #### `/` — Root Directory
 This is the starting point of the entire system.
 
@@ -125,6 +128,9 @@ Examples:
 ### Linux File System Layers
 I also learned the **three major layers of the Linux file system**.
 
+
+<img width="733" height="377" alt="linus archiet file system" src="https://github.com/user-attachments/assets/d0f21bef-b130-40cf-82f1-c539008dda05" />
+
 #### 1) Logical File System
 The layer applications interact with for:
 - open
@@ -170,6 +176,24 @@ I practiced:
 - jumping directly to the home directory
 - listing directory contents
 - tracing the Linux file system from `/`
+
+
+
+<p align="center">
+  <img width="1085" height="172" alt="linux pwd" src="https://github.com/user-attachments/assets/dfa84b0f-c682-45bb-9752-86b89694538b" />
+</p>
+
+
+<p align="center">
+  <img width="1221" height="232" alt="linux ls" src="https://github.com/user-attachments/assets/91300649-dfe6-43b6-9210-f5e24fb384e3" />
+</p>
+
+
+<p align="center">
+  <img width="1287" height="394" alt="linux cd" src="https://github.com/user-attachments/assets/9b05198a-f686-4aeb-8de6-5fa75ddd57c1" />
+</p>
+
+
 
 Commands practiced:
 ```bash
@@ -233,7 +257,26 @@ cd /
 cd /etc
 cd ..
 cd ~
+
 ```
+
+
+<p align="center">
+  <img width="1085" height="172" alt="linux pwd" src="https://github.com/user-attachments/assets/dfa84b0f-c682-45bb-9752-86b89694538b" />
+</p>
+
+
+
+<p align="center">
+  <img width="1221" height="232" alt="linux ls" src="https://github.com/user-attachments/assets/91300649-dfe6-43b6-9210-f5e24fb384e3" />
+</p>
+
+
+
+<p align="center">
+  <img width="1287" height="394" alt="linux cd" src="https://github.com/user-attachments/assets/9b05198a-f686-4aeb-8de6-5fa75ddd57c1" />
+</p>
+
 
 ### Linux Directory Tree Explored
 ```text
