@@ -316,6 +316,24 @@ rm apples.csv
 locate banana.txt
 uname -a
 ```
+<img width="1089" height="135" alt="list all file" src="https://github.com/user-attachments/assets/1f08d2b7-4086-4681-93f4-e912d9ecdd2a" />
+<br><br>
+
+<img width="867" height="581" alt="cd" src="https://github.com/user-attachments/assets/49d1c343-579f-4b5a-9ab2-d6e1f6e27046" />
+<br><br>
+
+<img width="1221" height="232" alt="linux ls" src="https://github.com/user-attachments/assets/702fe648-6449-459a-8e12-36483386cb9c" />
+<br><br>
+
+<img width="1085" height="172" alt="linux pwd" src="https://github.com/user-attachments/assets/f2923b0e-fcd7-41ea-9ed1-d392f43cdd54" />
+<br><br>
+
+<img width="1152" height="420" alt="ls -l" src="https://github.com/user-attachments/assets/16572c2a-c7ce-4657-9f3c-a2f5109b80b5" />
+<br><br>
+
+<img width="1286" height="678" alt="linux rm" src="https://github.com/user-attachments/assets/7e86432e-e390-4b4a-b6d2-084eaa1c712d" />
+
+
 
 ### Mini Directory Structure Built
 ```text
