@@ -32,7 +32,7 @@ The most interesting part of today’s learning was understanding the story behi
 ### Understanding the Linux Directory Tree
 The Linux directory tree is like a map of the operating system.
 
-<img width="586" height="515" alt="Linu file tree" src="https://github.com/user-attachments/assets/f02844c2-b08d-4f0e-9450-be85be12b4ef" />
+<img width="1190" height="896" alt="Linux Tree Directory" src="https://github.com/user-attachments/assets/65403a6d-ebe1-48e0-97de-fbf91958d5a6" />
 
 
 #### `/` — Root Directory
@@ -115,6 +115,22 @@ Important subfolders:
 - `/usr/sbin`
 - `/usr/lib`
 - `/usr/local`
+
+### `/var`
+The directory stores variable data files that change frequently during system operation, such as logs, spool directories, and administrative or transient data.
+
+Examples:
+- `/var/log` (System and application logs)
+
+- `/var/mail` (User mailbox files)
+
+- `/var/spool` (Tasks waiting to be processed, like print jobs)
+
+- `/var/lib` (Dynamic state information, like database files)
+
+- `/var/tmp` (Temporary files that are preserved between system reboots)
+
+
 
 #### `/proc`
 A virtual file system that exposes real-time system information.
@@ -294,6 +310,7 @@ cd ~
 ├── srv
 ├── tmp
 ├── usr
+├── var
 └── proc
 ```
 
