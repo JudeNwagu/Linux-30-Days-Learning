@@ -309,3 +309,15 @@ netflix/
     └── sci_fi/
         └── stranger_things.txt
 ```
+
+<img width="1287" height="394" alt="linux cd" src="https://github.com/user-attachments/assets/c67f88df-addd-4ad1-9ee5-8fada10bffd7" />
+
+<img width="1351" height="671" alt="linux manual" src="https://github.com/user-attachments/assets/a1a3f82d-d9d4-4aaf-b23e-7c114b0384b1" />
+
+<img width="1347" height="681" alt="linux pratice" src="https://github.com/user-attachments/assets/fa7cc0f3-0e22-429b-8189-4350e5961166" />
+
+<img width="1132" height="657" alt="linux ps" src="https://github.com/user-attachments/assets/ddef1b02-d70b-4a11-b29e-522aaa7c3534" />
+
+<img width="1085" height="172" alt="linux pwd" src="https://github.com/user-attachments/assets/8e5b433e-3f5e-4fb2-ab52-ab40e453a19f" />
+
+<img width="1286" height="678" alt="linux rm" src="https://github.com/user-attachments/assets/ad02d1ab-e999-437a-a12c-cd8ac60e14b1" />
