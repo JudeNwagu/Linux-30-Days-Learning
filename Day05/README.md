@@ -345,3 +345,17 @@ User identity check
 Alphabetical sorting
 Structured data organization
 ```
+
+<img width="1357" height="686" alt="Linux grep 1" src="https://github.com/user-attachments/assets/75c16a00-052a-49b8-852d-371c29dcaa0d" />
+<br><br>
+
+<img width="1361" height="663" alt="linux grep" src="https://github.com/user-attachments/assets/b7bd03da-59ce-4043-8ae9-d43fd9197ce3" />
+<br><br>
+
+<img width="1361" height="663" alt="Linux grep (2)" src="https://github.com/user-attachments/assets/0771c11f-a5cb-43ea-b192-818d58fa881f" />
+<br><br>
+
+<img width="1363" height="680" alt="Linux whoami" src="https://github.com/user-attachments/assets/5f1a436a-581b-4425-9440-49db13d2f3e6" />
+<br><br>
+
+<img width="1326" height="515" alt="Linux whoami 2" src="https://github.com/user-attachments/assets/989b4076-d18e-45ff-a12a-87cd44117e00" />
