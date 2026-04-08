@@ -19,7 +19,7 @@ I continued the Linux journey by exploring commands that help me understand **wh
 
 ---
 
-### 22. `cal`
+###  `cal`
 The `cal` command is used to display a **calendar directly in the terminal**.
 
 This is useful for:
@@ -66,7 +66,7 @@ This command is simple, but very useful for **terminal-based scheduling awarenes
 
 ---
 
-### 23. `whereis`
+###  `whereis`
 
 The `whereis` command helps locate:
 
@@ -164,7 +164,7 @@ These options make `whereis` much more flexible.
 
 ---
 
-### 24. `df`
+###  `df`
 
 The `df` command displays **disk usage of mounted file systems**.
 
