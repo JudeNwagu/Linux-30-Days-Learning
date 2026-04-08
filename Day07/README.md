@@ -317,4 +317,4 @@ Today shifted my learning from **just working with files locally to interacting 
 
 The biggest takeaway:
 
-> **Linux is not just for managing files, it is also a powerful tool for collecting and validating data before analysis.**
+**Linux is not just for managing files, it is also a powerful tool for collecting and validating data before analysis.**
