@@ -1,4 +1,4 @@
-````markdown
+
 # Day 06 - Calendar, Command Location, and Disk Usage in Linux
 
 ## Objective
@@ -19,7 +19,7 @@ I continued the Linux journey by exploring commands that help me understand **wh
 
 ---
 
-### 22. `cal`
+###  `cal`
 The `cal` command is used to display a **calendar directly in the terminal**.
 
 This is useful for:
@@ -66,7 +66,7 @@ This command is simple, but very useful for **terminal-based scheduling awarenes
 
 ---
 
-### 23. `whereis`
+###  `whereis`
 
 The `whereis` command helps locate:
 
@@ -164,7 +164,7 @@ These options make `whereis` much more flexible.
 
 ---
 
-### 24. `df`
+###  `df`
 
 The `df` command displays **disk usage of mounted file systems**.
 
@@ -327,6 +327,21 @@ The strongest takeaway:
 
 ## Output
 
+<img width="1280" height="621" alt="linux df" src="https://github.com/user-attachments/assets/ee8db334-03e5-4012-8e0f-1af35e53d9d8" />
+<br><br>
+
+<img width="1219" height="673" alt="Screenshot 2026-04-07 174514" src="https://github.com/user-attachments/assets/2d56e259-dce3-4653-bc11-372647ef3fec" />
+<br><br>
+
+<img width="1365" height="464" alt="Screenshot 2026-04-07 232119" src="https://github.com/user-attachments/assets/85352fd6-3b67-46e6-b9da-ed9902bae9a9" />
+<br><br>
+
+<img width="1349" height="601" alt="Screenshot 2026-04-07 232457" src="https://github.com/user-attachments/assets/45de1882-0d24-453d-b7d9-0c7712f89fa4" />
+<br><br>
+
+<img width="1311" height="626" alt="Screenshot 2026-04-07 232928" src="https://github.com/user-attachments/assets/cb1ca373-d87d-4682-b5a2-43fdbe3ac4da" />
+<br><br>
+
 ### Commands Practiced
 
 ```bash
@@ -360,4 +375,4 @@ Linux root storage: 1% used
 This was a major learning day because it introduced **Linux storage awareness, executable discovery, and system-level inspection**, which are all critical for building reliable data engineering environments.
 
 ```
-```
+
