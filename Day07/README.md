@@ -1,7 +1,3 @@
-Got it — this version is tighter, clearer, and more aligned with how you’ve been documenting your previous days. I’ve replaced “So What?” with **“Why It Matters”**, improved flow, and ensured every example is preserved and properly structured.
-
----
-
 # Day 07 - File Metrics and Downloading Data with wc and wget
 
 ## Objective
@@ -9,6 +5,7 @@ Got it — this version is tighter, clearer, and more aligned with how you’ve 
 The goal for today was to understand how to **measure file content using `wc`** and learn how to **download files from the internet using `wget`**, which is essential for handling datasets in real-world workflows.
 
 ---
+
 
 ## What I Learned
 
@@ -303,6 +300,16 @@ wget -i urls.txt
 Allows batch downloading of multiple datasets.
 
 ---
+
+<img width="1347" height="602" alt="Linux wc 1" src="https://github.com/user-attachments/assets/f56595f7-1673-42df-89bb-4d60097d35be" />
+<br><br>
+
+<img width="1335" height="614" alt="Linux wc 2" src="https://github.com/user-attachments/assets/efb21859-cd2a-4fdf-867b-1fb80c7772f2" />
+<br><br>
+
+<img width="1265" height="621" alt="Linux wc" src="https://github.com/user-attachments/assets/d84cb9f6-e4ec-4e5d-a3c0-badc40447cea" />
+<br><br>
+
 
 ## Final Reflection
 
