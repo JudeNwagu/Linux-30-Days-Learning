@@ -403,4 +403,33 @@ project_zenith/logs/system:
 daily_log.txt  incident_report.txt  schema_v1.json
 ```
 
+<img width="1365" height="227" alt="Linux Enviromental" src="https://github.com/user-attachments/assets/89dd1527-f5d8-4534-94d0-eaeb2c0c2f82" />
+<br><br>
+
+<img width="1352" height="652" alt="Linux project link" src="https://github.com/user-attachments/assets/3ab130e7-2514-4210-9788-276bf32532be" />
+<br><br>
+
+<img width="1353" height="615" alt="Linux project mkdir" src="https://github.com/user-attachments/assets/81b4f313-e55d-4027-81a4-35c7c35877fb" />
+<br><br>
+
+<img width="1360" height="633" alt="Linux project rm" src="https://github.com/user-attachments/assets/1190bc49-58f4-4602-b24a-67c38adb7e06" />
+<br><br>
+
+<img width="1353" height="615" alt="Screenshot 2026-04-09 172220" src="https://github.com/user-attachments/assets/736abfdf-442c-4b95-a055-7859de9239e7" />
+<br><br>
+
+<img width="1352" height="652" alt="Screenshot 2026-04-09 172314" src="https://github.com/user-attachments/assets/91554dc6-d098-4964-a39b-6330506d0440" />
+<br><br>
+
+<img width="1322" height="661" alt="Screenshot 2026-04-09 172404" src="https://github.com/user-attachments/assets/cc379249-afb3-41fc-b0d5-c2348bcea4bb" />
+<br><br>
+
+<img width="1359" height="707" alt="Screenshot 2026-04-09 172528" src="https://github.com/user-attachments/assets/78f615e5-4393-4d81-8d2a-3f2999002c3f" />
+<br><br>
+
+<img width="1364" height="672" alt="Screenshot 2026-04-09 172557" src="https://github.com/user-attachments/assets/50cd8b3e-73fb-4a84-b3e6-69344faf1f10" />
+<br><br>
+
+<img width="1351" height="442" alt="Screenshot 2026-04-09 172802" src="https://github.com/user-attachments/assets/422c668d-e115-4522-a00b-737485d92997" />
+
 
