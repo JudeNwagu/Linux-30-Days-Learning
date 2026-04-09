@@ -1,24 +1,18 @@
 
-# Day 08 - Project Zenith: Simulating a Data Engineering Lifecycle on Linux
+# Day 08 - Linux Workflow Simulation for Data Engineering Environments
 
 ## Objective
+The goal for today was to simulate how Linux supports the operational side of data engineering workflows.
 
-The goal of today’s project was to simulate how a Data Engineer would use Linux to build and manage a structured data workspace.
+Instead of focusing only on isolated commands, I built a structured Linux environment that mirrors how data teams manage:
+- layered storage zones
+- schema references
+- system logs
+- storage diagnostics
+- process monitoring
+- cleanup workflows
 
-Instead of practicing isolated commands, I used Linux to create a **mini production-like landing zone** that mirrors how raw data, processed data, analytics outputs, and system logs are handled in real workflows.
-
-The objectives for each phase were:
-
-* verify system readiness before building
-* create a layered data directory structure
-* manage schema versions using symbolic links
-* simulate log ingestion and incident extraction
-* sort infrastructure node metadata
-* inspect storage and active shell processes
-* safely clean temporary raw landing zones
-* validate command history for repeatability
-
-This project helped connect Linux fundamentals to real **Data Engineering operations thinking**.
+This practice was designed to strengthen the Linux foundations required for data engineering environments, where reliability, structure, and validation matter as much as the data itself.
 
 ---
 
@@ -213,7 +207,7 @@ This connects directly to:
 
 ## What I Built / Practiced
 
-Today I built a mini Linux data operations workflow.
+Today’s practice focused on simulating the Linux operational workflow that supports a data engineering environment.
 
 ### Final Project Structure
 
@@ -345,7 +339,7 @@ Command syntax precision is everything in Linux.
 
 ## Key Takeaways
 
-Today made Linux feel closer to real Data Engineering work.
+Linux is the operational backbone behind reliable data engineering environments.
 
 My biggest lessons:
 
