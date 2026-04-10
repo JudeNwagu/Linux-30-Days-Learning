@@ -458,12 +458,20 @@ cksum data_title
 cksum countries.txt country.txt names.txt
 ```
 
-### Practical file built
+<img width="1362" height="716" alt="Screenshot 2026-04-10 172343" src="https://github.com/user-attachments/assets/77fdfb1e-992e-4b97-a14d-2c74d1d36145" />
 
-```text
-data_title
-```
 
-### Key validation outcome
+<img width="1366" height="712" alt="Screenshot 2026-04-10 172410" src="https://github.com/user-attachments/assets/c42180fe-b062-4144-845c-ff3e1b9eaa01" />
+<br><br>
 
-Verified that repeated checksum results remained identical, confirming the file had not changed after review.
+
+<img width="1358" height="712" alt="Screenshot 2026-04-10 165829" src="https://github.com/user-attachments/assets/02e4d327-eed9-419d-9154-beca4b72055d" />
+<br><br>
+
+
+<img width="1362" height="682" alt="Screenshot 2026-04-10 165921" src="https://github.com/user-attachments/assets/e6e923a9-8e24-4bdb-87da-51a23550826f" />
+
+
+
+
+
