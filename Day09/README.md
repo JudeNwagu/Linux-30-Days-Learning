@@ -3,6 +3,9 @@
 ## Objective
 
 Today’s goal was to strengthen my Linux command-line foundation by learning practical commands used in real file workflows.
+<br><br>
+<img width="1437" height="736" alt="file system" src="https://github.com/user-attachments/assets/a0c1b6a7-ebe0-4701-abed-dfcc0b442126" />
+<br><br>
 
 I focused on three highly useful commands:
 
@@ -369,7 +372,6 @@ This is valuable for:
 
 Today’s practice was very hands-on.
 
-I worked on:
 
 * extracting filenames from nested paths
 * cleaning file extensions from CSV exports
