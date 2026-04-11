@@ -427,3 +427,18 @@ tar -czf archive.tar.gz file1 file2
 * reduced storage size with compression
 * explored modern alternatives
 * prepared mindset for large-file chunking with `csplit`
+
+
+<img width="1361" height="707" alt="Screenshot 2026-04-11 101103" src="https://github.com/user-attachments/assets/33dfea92-8848-4767-9e05-e358a8dfe986" />
+<br><br>
+
+<img width="1322" height="707" alt="Screenshot 2026-04-11 101139" src="https://github.com/user-attachments/assets/c9a9a7eb-1c07-4fe3-a656-9e211a673345" />
+<br><br>
+
+<img width="1334" height="413" alt="Screenshot 2026-04-11 101434" src="https://github.com/user-attachments/assets/f3559392-872e-4d75-8c0d-fc115464d564" />
+<br><br>
+
+<img width="1329" height="425" alt="Screenshot 2026-04-11 101606" src="https://github.com/user-attachments/assets/48ed468e-12d9-4ff3-ba65-8f9c72cf7080" />
+
+
+
