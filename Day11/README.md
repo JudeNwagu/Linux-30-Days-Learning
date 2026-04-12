@@ -391,3 +391,26 @@ tail -c -7 state.txt
 file *
 file capital.txt
 ```
+
+<img width="1338" height="716" alt="Screenshot 2026-04-12 181318" src="https://github.com/user-attachments/assets/ab6400e9-8b4b-47f8-adae-4e0dbfe79497" />
+<br><br>
+
+<img width="1366" height="707" alt="Screenshot 2026-04-12 181334" src="https://github.com/user-attachments/assets/03c7c080-61b7-4958-ba0d-2ce32393cb04" />
+<br><br>
+
+<img width="1360" height="712" alt="Screenshot 2026-04-12 184737" src="https://github.com/user-attachments/assets/611b5ee0-5257-460e-a57b-737de6b96ca9" />
+<br><br>
+
+<img width="1366" height="719" alt="Screenshot 2026-04-12 184806" src="https://github.com/user-attachments/assets/f44ada3d-72b8-4a1a-a476-5b44fe897098" />
+<br><br>
+
+<img width="1361" height="714" alt="Screenshot 2026-04-12 184830" src="https://github.com/user-attachments/assets/0bb44971-eb6c-434b-afc8-5b379ce9c9e5" />
+<br><br>
+
+<img width="1366" height="711" alt="Screenshot 2026-04-12 184853" src="https://github.com/user-attachments/assets/679bffad-f14d-4f09-a6a5-36b42126ed01" />
+<br><br>
+
+<img width="1366" height="715" alt="Screenshot 2026-04-12 184917" src="https://github.com/user-attachments/assets/4d58afe7-deaa-49e2-a213-8e4e5c946b56" />
+
+
+
