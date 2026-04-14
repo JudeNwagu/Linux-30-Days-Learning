@@ -598,6 +598,21 @@ tar -cvf day11_data.tar *.txt
 
 ---
 
+<img width="1366" height="730" alt="cut 2" src="https://github.com/user-attachments/assets/2b053313-3959-4e0d-bd20-7d29cb341623" />
+<br><br>
+
+<img width="1352" height="711" alt="cut-c" src="https://github.com/user-attachments/assets/0e404abc-3e1a-4715-a565-196325657d9e" />
+<br><br>
+
+<img width="1366" height="591" alt="tar" src="https://github.com/user-attachments/assets/f73c13c1-1c3c-4bf4-8176-f726534a34c0" />
+<br><br>
+
+<img width="1360" height="712" alt="cut" src="https://github.com/user-attachments/assets/1c633005-b04f-4ee8-9a4d-3ef9f5e5c404" />
+<br><br>
+
+<img width="1350" height="716" alt="uniq" src="https://github.com/user-attachments/assets/73a77a41-3d40-4bb0-870a-c1c5e4d4a019" />
+
+
 
 
 
