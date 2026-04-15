@@ -17,7 +17,7 @@ This was about understanding **how Linux directory operations map directly to th
 
 At this level, Linux stops being “commands to memorize” and becomes **operational thinking for data systems**.
 
-The commands we covered:
+The commands i covered:
 
 * `cd`
 * `pwd`
