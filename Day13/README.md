@@ -1,6 +1,8 @@
 
 # **Day 13 - Directory Operations in Linux for Data Engineering Workflows**
 
+<img width="749" height="373" alt="Screenshot 2026-04-14 234220" src="https://github.com/user-attachments/assets/1918c471-4760-47c1-b456-7203404ded6f" />
+
 
 Day 13 was not just about “folder commands.”
 This was about understanding **how Linux directory operations map directly to the daily reality of a Data Engineer**:
@@ -597,18 +599,18 @@ Built on previous continuity from:
 
 #  Output
 
-By the end of Day 13, you can now confidently:
+<img width="1362" height="718" alt="Screenshot 2026-04-15 160505" src="https://github.com/user-attachments/assets/6a64a386-368d-48bc-b2da-3250e3982066" />
+<br><br>
 
-```text
-✔ Navigate complex ETL folder structures
-✔ Verify working paths before risky operations
-✔ Build nested data lake folders
-✔ Discover files with precision
-✔ Diagnose storage pressure by directory
-✔ Visualize project hierarchy
-✔ Extract reusable parent paths
-✔ Safely remove empty folders
-✔ Understand mounted storage relationships
-✔ Think in filesystem architecture, not just commands
-```
+
+<img width="1361" height="716" alt="Screenshot 2026-04-15 171511" src="https://github.com/user-attachments/assets/ab8f0588-2922-477a-9cc9-ce4462f55ee8" />
+<br><br>
+
+<img width="1359" height="709" alt="Screenshot 2026-04-15 171529" src="https://github.com/user-attachments/assets/25a680b9-66c0-4b68-b759-a344fe035971" />
+<br><br>
+
+
+<img width="1326" height="714" alt="Screenshot 2026-04-15 171554" src="https://github.com/user-attachments/assets/38159529-8c36-4da2-bade-c4aea4ab9180" />
+
+
 
