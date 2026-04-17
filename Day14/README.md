@@ -32,8 +32,8 @@ because system security starts with **who can do what**.
 ## What I Learned
 
 ## 1) Linux User Types
-![](Types-user-id.png)
 
+![](./images/2026-04-16-21-56-53.png)
 
 The first major concept was understanding the different kinds of users Linux supports.
 
@@ -155,7 +155,8 @@ That is a real workflow improvement.
 
 ## 4) Important Linux User Management Files
 
-![](./images/2026-04-16-21-56-53.png)
+<img width="716" height="357" alt="Screenshot 2026-04-16 124145" src="https://github.com/user-attachments/assets/a43161f7-bb0e-4ed7-8a7d-98852d50c121" />
+<br><br>
 
 Today also helped me connect user commands to the actual files Linux updates behind the scenes.
 
