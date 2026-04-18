@@ -1,25 +1,19 @@
-
 # Day 15 – File Permissions and Ownership in Linux
 
 ## Objective
 
-Today’s focus was on understanding how Linux controls access to files and directories using permissions and ownership.
+Today’s focus was understanding how Linux controls access to files and directories using permissions and ownership.
 
-Linux is a multi-user system, which means different users can interact with the same files. Without proper control, this can easily lead to security issues or accidental changes. The goal for today was to understand how Linux:
+Linux file permissions form the foundation of the system’s security model. They define who can read, write, or execute files and directories, ensuring that only authorized users or processes can access sensitive data.
 
-* controls who can read, write, or execute files
+The goal was to clearly understand how Linux:
+
+* controls access using read, write, and execute permissions
 * assigns ownership to users and groups
-* manages access using permission rules
-* protects sensitive files from unauthorized access
+* manages access through permission groups
+* protects files in a multi-user environment
 
-This is especially important when working with:
-
-* shared systems
-* production servers
-* data pipelines
-* team-based environments
-
-Because at the core of Linux security is a simple idea: **who can do what on a file**.
+This is critical when working with shared systems, servers, and production environments where access control directly impacts security.
 
 ---
 
@@ -27,91 +21,105 @@ Because at the core of Linux security is a simple idea: **who can do what on a f
 
 ### 1) The Three Basic Permissions
 
-Every file and directory in Linux has three core permissions:
+<img width="719" height="358" alt="Screenshot 2026-04-17 130443" src="https://github.com/user-attachments/assets/32d2a0f5-5893-4d79-aa2a-d314d322e935" />
+<br><br>
 
-| Permission    | Meaning                                             |
-| ------------- | --------------------------------------------------- |
-| `r` (read)    | View file contents or list directory files          |
-| `w` (write)   | Modify a file or add/delete files in a directory    |
-| `x` (execute) | Run a file as a script/program or enter a directory |
+Every file or directory has three types of permissions:
 
-These three permissions are the building blocks of access control in Linux.
+| Letter | Definition                                        |
+| ------ | ------------------------------------------------- |
+| r      | Read – view file contents or list directory files |
+| w      | Write – modify file contents or add/delete files  |
+| x      | Execute – run a file or access a directory        |
 
 ---
 
-### 2) User Categories (Who Permissions Apply To)
+### 2) Ownership and Permission Groups
 
-Permissions are not just about actions—they are also about **who those actions apply to**.
+<img width="722" height="357" alt="Screenshot 2026-04-17 130902" src="https://github.com/user-attachments/assets/b20d8d35-b53a-49c4-96a7-72c2c35f62f7" />
+<br><br>
 
-Linux divides access into three groups:
+Permissions are assigned to three categories of users:
 
 ```
 rwx     rwx     rwx
 user    group   others
 ```
 
-| Symbol | Applies To | Description               |
-| ------ | ---------- | ------------------------- |
-| `u`    | User       | The owner of the file     |
-| `g`    | Group      | Users in the file’s group |
-| `o`    | Others     | Everyone else             |
-| `a`    | All        | User + Group + Others     |
+| Reference | Class  | Description                        |
+| --------- | ------ | ---------------------------------- |
+| u         | user   | Applies to the file owner          |
+| g         | group  | Applies to users in the group      |
+| o         | others | Applies to all other users         |
+| a         | all    | Applies to user, group, and others |
 
-This structure makes it easy to control access at scale instead of managing users one by one.
+**Permission Operators**
+
+| Operator | Meaning              |
+| -------- | -------------------- |
+| +        | Add permission       |
+| -        | Remove permission    |
+| =        | Set exact permission |
 
 ---
 
 ### 3) Understanding File Permission Output
 
-Using:
-
 ```bash
-ls -l fruits.txt
-```
-
-Output:
-
-```
+judoski@DESKTOP-6FUB9PD:~$ ls -l fruits.txt
 -rw-r--r-- 1 judoski judoski 122 Apr 11 08:56 fruits.txt
 ```
 
 Breakdown:
 
-* `-` → file (`d` would mean directory)
-* `rw-r--r--` → permissions
-* `judoski` → file owner
-* `judoski` → group owner
-* `122` → file size
-* `Apr 11 08:56` → last modified
-
-This single line shows both **permission and ownership in one view**.
+1. `-` → file (`d` would mean directory)
+2. `rw-r--r--` → permission structure
+3. `judoski` → file owner
+4. `judoski` → group owner
+5. `122` → file size
+6. `Apr 11 08:56` → last modified
 
 ---
 
-### 4) Working with chmod (Changing Permissions)
+### 4) Working with `chmod` (Permissions)
 
-The `chmod` command is used to control access to files.
-
-#### Basic Examples:
+Basic commands:
 
 ```bash
-chmod +x file.txt      # make executable
-chmod -wx file.txt     # remove write and execute
-chmod ugo-rwx file.txt # remove all permissions
+chmod +rwx filename
+chmod -rwx directoryname
+chmod +x filename
+chmod -wx filename
+```
+
+#### Example (Symbolic Mode)
+
+```bash
+chmod o+x fruits.txt
+judoski@DESKTOP-6FUB9PD:~$ chmod o+x fruits.txt
+
+-rwxr--r-x 1 judoski judoski     122 Apr 11 08:56 fruits.txt
+```
+
+Removing all permissions:
+
+```bash
+chmod ugo-rwx fruits.txt
+judoski@DESKTOP-6FUB9PD:~$ chmod ugo-rwx fruits.txt
+
+---------- 1 judoski judoski     122 Apr 11 08:56 fruits.txt
+```
+
+Restoring permissions:
+
+```bash
+judoski@DESKTOP-6FUB9PD:~$ chmod 766 fruits.t
+-rwxrw-rw- 1 judoski judoski     122 Apr 11 08:56 fruits.txt
 ```
 
 ---
 
 ### 5) Numeric (Octal) Permissions
-
-Instead of symbols, permissions can be set using numbers:
-
-| Number | Permission |
-| ------ | ---------- |
-| 7      | rwx        |
-| 6      | rw-        |
-| 5      | r-x        |
-| 4      | r--        |
 
 Example:
 
@@ -119,111 +127,147 @@ Example:
 chmod 745 fruits.txt
 ```
 
-Breakdown:
-
-| Category | Value | Meaning              |
-| -------- | ----- | -------------------- |
-| Owner    | 7     | read, write, execute |
-| Group    | 4     | read only            |
-| Others   | 5     | read + execute       |
-
 Result:
 
 ```
 -rwxr--r-x
 ```
 
+| Category | Value | Meaning |
+| -------- | ----- | ------- |
+| Owner    | 7     | rwx     |
+| Group    | 4     | r--     |
+| Others   | 5     | r-x     |
+
+#### Equivalent Numeric Table
+
+| User Type | Permissions | Binary | Value |
+| --------- | ----------- | ------ | ----- |
+| Owner     | rwx         | 111    | 7     |
+| Group     | rw-         | 110    | 6     |
+| Others    | rw-         | 110    | 6     |
+
 ---
 
 ### 6) Common Permission Modes
 
-| Mode | Owner | Group | Others | Use Case            |
-| ---- | ----- | ----- | ------ | ------------------- |
-| 700  | rwx   | ---   | ---    | Private files       |
-| 744  | rwx   | r--   | r--    | Personal scripts    |
-| 755  | rwx   | r-x   | r-x    | Executable programs |
-| 775  | rwx   | rwx   | r-x    | Team collaboration  |
+| Mode | Owner | Group | Others | Use Case           |
+| ---- | ----- | ----- | ------ | ------------------ |
+| 700  | rwx   | ---   | ---    | Private script     |
+| 711  | rwx   | --x   | --x    | Execute only       |
+| 744  | rwx   | r--   | r--    | Personal scripts   |
+| 750  | rwx   | r-x   | ---    | Team restricted    |
+| 754  | rwx   | r-x   | r--    | Mixed access       |
+| 755  | rwx   | r-x   | r-x    | Common default     |
+| 775  | rwx   | rwx   | r-x    | Team collaboration |
 
 ---
 
-### 7) Symbolic Permission Changes
+### 7) Reverting Permission Changes
 
-Symbolic mode allows targeted changes:
-
-```bash
-chmod o+x fruits.txt
-```
-
-This adds execute permission for others.
-
-You can also combine actions:
+To restore permissions:
 
 ```bash
-chmod ugo-rwx fruits.txt
+chmod 644 filename
 ```
 
-This removes all access.
+* Owner → read + write
+* Group → read
+* Others → read
 
 ---
 
 ### 8) Special Permissions
 
-Linux also supports advanced permissions:
+```bash
+chmod u+s program
+chmod g+s directoryname
+chmod +t directoryname
+```
 
-| Permission | Command     | Purpose                     |
-| ---------- | ----------- | --------------------------- |
-| setuid     | `chmod u+s` | Run file as owner           |
-| setgid     | `chmod g+s` | Inherit group permissions   |
-| sticky bit | `chmod +t`  | Only owner can delete files |
-
-These are often used in shared or secure environments.
+* **setuid** → run as file owner
+* **setgid** → inherit group
+* **sticky bit** → restrict deletion to owner
 
 ---
 
-### 9) Working with chown (Changing Ownership)
+### 9) Working with `chown` (Ownership)
 
-The `chown` command controls **who owns a file**.
-
-#### Syntax:
+Syntax:
 
 ```bash
-chown user:group file
+chown [options] new_owner[:new_group] file
 ```
 
-#### Examples:
-
-Change owner:
+#### Change Owner
 
 ```bash
-sudo chown judoski fruits.txt
+judoski@DESKTOP-6FUB9PD:~$ sudo chown judoski fruits.txt
 ```
 
-Change group:
+#### Change Group
 
 ```bash
-sudo chown :zenith_user data_pipeline.py
+judoski@DESKTOP-6FUB9PD:~$ touch data_pipeline.py
+judoski@DESKTOP-6FUB9PD:~$ sudo chown :zenith_user data_pipeline.py
 ```
 
-Change both:
+Verify:
 
 ```bash
-sudo chown judoski:zenith_user fruits.txt
+judoski@DESKTOP-6FUB9PD:~$ ls -l data_pipeline.py
+-rw-r--r-- 1 judoski zenith_user 0 Apr 17 16:47 data_pipeline.py
+```
+
+#### Change Owner and Group Together
+
+```bash
+judoski@DESKTOP-6FUB9PD:~$ sudo chown judoski:zenith_user fruits.txt
 ```
 
 ---
 
-### 10) Useful chown Options
+### 10) `chown` Options in Practice
 
-| Option | Purpose                      |
-| ------ | ---------------------------- |
-| `-c`   | Show only when changes occur |
-| `-v`   | Show all changes (verbose)   |
-| `-f`   | Suppress permission errors   |
-
-Example:
+#### `-c` (only show changes)
 
 ```bash
-sudo chown -v judoski:docker data_pipeline.py
+judoski@DESKTOP-6FUB9PD:~$ sudo chown -c data_engine:zenith_user fruits.txt
+changed ownership of 'fruits.txt' from judoski:zenith_user to data_engine:zenith_user
+```
+
+#### `-v` (verbose output)
+
+```bash
+judoski@DESKTOP-6FUB9PD:~$ sudo chown -v judoski:zenith_user data_pipeline.py
+ownership of 'data_pipeline.py' retained as judoski:zenith_us
+
+judoski@DESKTOP-6FUB9PD:~$ sudo chown -v judoski:docker data_pipeline.py
+changed ownership of 'data_pipeline.py' from judoski:zenith_user to judoski:docker
+```
+
+#### Silent when no change
+
+```bash
+judoski@DESKTOP-6FUB9PD:~$ sudo chown -c judoski:docker data_pipeline.py
+```
+
+#### Switching back
+
+```bash
+judoski@DESKTOP-6FUB9PD:~$ sudo chown -c judoski:zenith_user data_pipeline.py
+changed ownership of 'data_pipeline.py' from judoski:docker to judoski:zenith_user
+```
+
+#### `-f` (force/suppress errors)
+
+```bash
+chown: invalid user: ‘ghost_user’
+
+judoski@DESKTOP-6FUB9PD:~$ chown data_engine data_pipeline.py
+chown: changing ownership of 'data_pipeline.py': Operation not permitted
+
+judoski@DESKTOP-6FUB9PD:~$ sudo chown -f data_engine data_pipeline.py
 ```
 
 ---
@@ -232,60 +276,63 @@ sudo chown -v judoski:docker data_pipeline.py
 
 Today felt very practical. I worked on:
 
-* checking file permissions using `ls -l`
-* modifying permissions with both symbolic and numeric methods
-* testing different permission levels (644, 755, 775)
+* inspecting file permissions using `ls -l`
+* modifying permissions with `chmod` (symbolic and numeric)
+* testing multiple permission levels (644, 755, 775)
 * removing and restoring access
-* changing file ownership between users and groups
-* creating shared access using group ownership
-* experimenting with real scenarios like project files
-
-This felt like working on a real system where access control matters.
+* assigning group-based access
+* changing file ownership using `chown`
+* verifying ownership changes with real terminal output
 
 ---
 
 ## Challenges Faced
 
-One of the main challenges was understanding **when to use numeric vs symbolic permissions**.
+### 1) Ghost User Error
 
-At first, numbers like `755` or `644` felt abstract, but after breaking them down into `rwx`, they became easier to understand.
+```bash
+chown: invalid user: ‘master’
+```
 
-Another challenge was ownership errors:
+Linux validates users against `/etc/passwd`. If the user doesn’t exist, the command fails.
 
-* trying to assign a file to a user that doesn’t exist
-* forgetting to use `sudo` when required
+---
 
-This made it clear that Linux validates everything against system records.
+### 2) Understanding `-f` Flag
+
+* suppresses permission errors
+* does NOT hide invalid user errors
+
+---
+
+### 3) Updating User and Group Together
+
+```bash
+sudo chown judoski:zenith_user script.py
+```
+
+This single command is cleaner and safer than running multiple commands.
 
 ---
 
 ## Key Takeaways
 
-A few important lessons stood out today:
-
 * File permissions are the backbone of Linux security
-* Every file has both **permissions and ownership**
-* Groups make access management easier in teams
-* Numeric permissions are faster once you understand them
+* Every file has both permissions and ownership
+* Groups simplify access control in teams
+* Numeric permissions become easier with practice
 * Ownership must match real system users
 * `sudo` is required for most ownership changes
-* Small mistakes in permissions can lead to big security risks
-
-This knowledge is directly useful for:
-
-* system administration
-* DevOps workflows
-* cloud environments
-* data engineering systems
+* Choosing between `-v` and `-c` depends on your workflow (manual vs automation)
 
 ---
 
 ## Resources
 
-* DEC Resources
-*Geeksforgeeks
-* Practice files created during learning
-* Terminal experimentation
+* DEC Learning Materials
+* GeeksforGeeks
+* Linux terminal practice
+* Personal test files
 
 ---
 
@@ -294,10 +341,36 @@ This knowledge is directly useful for:
 By the end of today, I can:
 
 * confidently read and interpret file permissions
-* assign correct access levels using `chmod`
-* manage file ownership using `chown`
-* create secure and controlled file environments
+* modify access using `chmod`
+* manage ownership using `chown`
+* create secure file access structures
 
-This feels like a major step forward, because understanding permissions is what separates basic Linux usage from real system-level control.
+This feels like moving from just using Linux… to actually controlling it.
+
+<img width="1362" height="716" alt="Screenshot 2026-04-17 140817" src="https://github.com/user-attachments/assets/e86b2c7a-1333-41de-a07f-d2d2d1013a43" />
+<br><br>
+
+
+<img width="1362" height="716" alt="Screenshot 2026-04-17 140817" src="https://github.com/user-attachments/assets/70a715b9-0517-4d01-adcb-5cd719a2b391" />
+<br><br>
+
+
+<img width="1366" height="714" alt="Screenshot 2026-04-17 175939" src="https://github.com/user-attachments/assets/731ab37a-6dce-43a9-be2e-5428a203d703" />
+<br><br>
+
+
+<img width="1366" height="715" alt="Screenshot 2026-04-17 180032" src="https://github.com/user-attachments/assets/4a3096e3-a5b8-4b2a-ac07-e75424941671" />
+<br><br>
+
+
+<img width="1363" height="717" alt="Screenshot 2026-04-17 180116" src="https://github.com/user-attachments/assets/8cc1fe6a-733e-46cd-98d1-1dd6ada03b83" />
+<br><br>
+
+
+<img width="1364" height="716" alt="Screenshot 2026-04-17 180133" src="https://github.com/user-attachments/assets/8b25f090-c801-42c3-a9bf-18b6b09a9a0b" />
+
+
+
+
 
 
