@@ -205,7 +205,7 @@ Seeing `?` instead of terminal names was confusing.
 
 * Linux terminal practice
 * Manual pages (`man ps`, `man top`)
-* Real-time experimentation
+* geeksforgeeks
 
 ---
 
