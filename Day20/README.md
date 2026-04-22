@@ -386,7 +386,8 @@ This is exactly what matters in data engineering:
 If you can’t monitor it,
 you can’t optimize it.
 
-![](./images/2026-04-22-10-13-00.png)
+<img width="1219" height="673" alt="Screenshot 2026-04-07 174514" src="https://github.com/user-attachments/assets/d34c4314-f8c4-4f38-b62a-a592fb5ddb52" />
+<br><br>
 
 ![](./images/2026-04-22-10-08-08.png)
 
