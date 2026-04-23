@@ -400,9 +400,9 @@ Produced too much data
 
 ## **Resources**
 
-* `man uptime`
-* `man iostat`
-* `man lsof`
+* Data Engineering Community Resource
+* Geeksforgeeks
+  
 
 ---
 
