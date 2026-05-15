@@ -28,7 +28,7 @@ This phase introduced:
 
 ---
 ## Project Architecture
-
+```
 data_pipeline/
 ├── ingestion/
 │   ├── raw/
@@ -45,6 +45,7 @@ data_pipeline/
 ├── scripts/
 ├── config/
 └── archive/
+```
 ---
 
 # Phase 5 — Automation & Scheduling
